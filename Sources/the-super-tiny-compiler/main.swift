@@ -1,0 +1,10 @@
+let input = "(add 1 (sub 2 3))"
+let tokens = tokenizer(input: input)
+let ast = parser(tokens: tokens)
+let code = generator(ast: ast)
+print("======= tokens =======\n")
+print(tokens)
+print("======= ast =======\n")
+print(ast)
+print("======= code =======\n")
+print(code)
